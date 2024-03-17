@@ -8,7 +8,7 @@ function Products() {
     <div className="container-products">
       <Carousel
         itemWidth={369}
-        itemGap={30}
+        itemGap={80}
         elementsPerGroup={3}
         title="Найгарячіші товари"
       >
@@ -16,6 +16,7 @@ function Products() {
           return (
             <ProductCard
               key={item.id}
+              id={item.id}
               preview={item.preview}
               title={item.title}
               type={item.type}
