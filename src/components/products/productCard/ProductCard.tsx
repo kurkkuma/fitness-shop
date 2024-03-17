@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./product_card.scss";
-import { useEffect } from "react";
 
 type ProductProps = {
   id: number;
