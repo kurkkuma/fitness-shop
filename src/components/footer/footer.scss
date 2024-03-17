@@ -1,0 +1,87 @@
+@import "../../index.scss";
+
+.container-footer {
+  border-top: 1px solid $black-20;
+  height: 21rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  .white {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2.8rem 6.125rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10rem;
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      width: 10.7rem;
+
+      & h1 {
+        font-size: 1rem;
+        color: $black-80;
+        margin-bottom: 1.8rem;
+      }
+
+      & ul {
+        list-style: none;
+        width: 10.7rem;
+        color: $black-60;
+
+        & li {
+          font-size: 0.9rem;
+          margin-bottom: 1.25rem;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .section.contacts {
+      & li {
+        cursor: default;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .black {
+    box-sizing: border-box;
+    width: 100%;
+    height: 5.8rem;
+    padding: 2.5rem 6.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $black-80;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+
+    .categories {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+
+      & li {
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

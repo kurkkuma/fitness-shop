@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+$white: #ffffff;
+$black-10: #e8e8e8;
+$black-20: #cccccc;
+$black-40: #959595;
+$black-60: #626262;
+$black-80: #343434;
+$black-100: #000000;
+$green: #4aaa4e;
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 0px;
+}

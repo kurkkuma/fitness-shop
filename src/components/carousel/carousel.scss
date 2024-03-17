@@ -1,0 +1,65 @@
+@import "../../index.scss";
+
+.conatiner-slider {
+  box-sizing: border-box;
+  width: 100%;
+
+  .slider {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5rem;
+    overflow: hidden;
+  }
+
+  .slider-line {
+    position: relative;
+    display: flex;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+
+    .reviews {
+      width: 1334px;
+      display: flex;
+    }
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    & h1 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .pagination {
+      height: auto;
+      display: flex;
+      align-items: center;
+      gap: 1.9rem;
+
+      & div {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        margin-bottom: 0.1rem;
+        color: $black-80;
+
+        span {
+          font-size: 1.5rem;
+          cursor: pointer;
+
+          &.disabled {
+            color: $black-40;
+          }
+        }
+      }
+    }
+  }
+}
