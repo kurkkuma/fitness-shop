@@ -20,8 +20,23 @@ function ProductCard({
   weight,
   price,
 }: ProductProps) {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <Link to={`/${id}`} style={{ textDecoration: "none" }}>
+    <Link
+      to={`/${id}`}
+      style={{
+        textDecoration: "none",
+        display: "flex",
+        justifyContent: "center",
+      }}
+      onClick={scrollToTop}
+    >
       <div className="container-card">
         <div className="container-img">
           <img

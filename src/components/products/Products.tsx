@@ -32,22 +32,3 @@ function Products() {
 }
 
 export default Products;
-{
-  /* <div className="container-products">
-<div className="title">
-  <h1>Найгарячіші товари</h1>
-
-  <div className="pagination">
-    <p>01 / 03</p>
-    <div>
-      <span className="disabled">⟵</span> <span>⟶</span>
-    </div>
-  </div>
-</div>
-<div className="cards">
-  <ProductCard />
-  <ProductCard />
-  <ProductCard />
-</div>
-</div> */
-}

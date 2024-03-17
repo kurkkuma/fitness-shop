@@ -17,7 +17,7 @@ function Reviews() {
             <ReviewCard
               key={item.id}
               avatar={item.avatar}
-              stars={item.stas}
+              stars={item.stars}
               name={item.name}
               review={item.review}
             />

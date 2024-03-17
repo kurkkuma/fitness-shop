@@ -1,0 +1,27 @@
+@import "../../../../style/variables.scss";
+
+.container-product-reviews {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 6.1rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5rem;
+  text-transform: none;
+
+  .add-review {
+    box-sizing: border-box;
+    width: 16.875rem;
+    border: 1px solid $black-100;
+    border-radius: 0.6rem;
+    padding: 1.8rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    & img {
+      width: 5.75rem;
+      height: 5.75rem;
+    }
+  }
+}
