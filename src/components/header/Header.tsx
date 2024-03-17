@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./header.scss";
 
 function Header() {
@@ -16,7 +17,10 @@ function Header() {
       </div>
 
       <div className="container-white">
-        <p className="logo">Ignat</p>
+        <Link to="/" style={{ textDecoration: "none", color: " #000000" }}>
+          <p className="logo">Ignat</p>
+        </Link>
+
         <ul className="categories">
           <li>Новинки</li>
           <li>Чоловіки</li>
