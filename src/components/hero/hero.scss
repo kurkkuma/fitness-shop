@@ -1,4 +1,4 @@
-@import "../../index.scss";
+@import "../../style/variables.scss";
 
 .container-hero {
   box-sizing: border-box;
@@ -42,7 +42,7 @@
       border: 2px solid $black-100;
       border-radius: 0.9rem;
       background: $black-100;
-      color: white;
+      color: $white;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
 

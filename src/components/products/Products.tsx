@@ -20,6 +20,7 @@ function Products() {
               title={item.title}
               type={item.type}
               number_of_colors={item.number_of_colors}
+              weight={item.weight}
               price={item.price}
             />
           );

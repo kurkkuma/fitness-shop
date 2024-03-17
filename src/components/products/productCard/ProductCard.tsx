@@ -5,6 +5,7 @@ type ProductProps = {
   title: string;
   type: string;
   number_of_colors?: number;
+  weight?: number;
   price: number;
 };
 
@@ -13,6 +14,7 @@ function ProductCard({
   title,
   type,
   number_of_colors,
+  weight,
   price,
 }: ProductProps) {
   return (
@@ -27,7 +29,8 @@ function ProductCard({
       </div>
       <h1>{title}</h1>
       <p>{type}</p>
-      <p>{number_of_colors} кольори</p>
+      {number_of_colors && <p>{number_of_colors} кольори</p>}
+      {weight && <p>{weight} кг</p>}
       <p className="price">{price} грн.</p>
     </div>
   );
