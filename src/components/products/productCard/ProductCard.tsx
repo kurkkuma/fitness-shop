@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./product_card.scss";
 import { useEffect } from "react";
 
@@ -21,13 +21,11 @@ function ProductCard({
   weight,
   price,
 }: ProductProps) {
-  const location = useLocation();
-
-  useEffect(() => {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
     });
-  }, [location.pathname]);
+  };
 
   return (
     <Link
@@ -37,6 +35,7 @@ function ProductCard({
         display: "flex",
         justifyContent: "center",
       }}
+      onClick={scrollToTop}
     >
       <div className="container-card">
         <div className="container-img">
